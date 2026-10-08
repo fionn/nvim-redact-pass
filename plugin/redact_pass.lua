@@ -23,6 +23,6 @@ vim.api.nvim_create_autocmd("VimEnter", {
         vim.opt.shelltemp = false
         vim.opt.history = 0
         vim.opt.modeline = false
-        vim.print("pass: leaky options disabled")
+        vim.notify("pass: leaky options disabled", vim.log.levels.INFO)
     end
 })

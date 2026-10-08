@@ -11,6 +11,7 @@ function M.redact_pass()
     vim.opt.history = 0
     vim.opt.modeline = false
     vim.notify("pass: leaky options disabled", vim.log.levels.INFO)
+    vim.g.redact_pass_redacted = true
 end
 
 return M
